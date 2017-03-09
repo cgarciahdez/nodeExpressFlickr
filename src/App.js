@@ -1,20 +1,44 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Search from './search';
+import Photos from './photos';
+import axios from 'axios';
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      photos: [],
+      colors:["red","blue"]
+    }
+  }
+
+  getPhotos(terms){
+
+    this.state.colors.map((color)=>{
+      console.log("/flickr/"+terms+" "+color)
+      axios.get("/flickr/"+terms+color)
+      .then(response => {
+        var photos = response.data.photos.photo;
+        this.setState({
+          photos: this.state.photos.concat(photos)
+        })
+      })
+    })
+
+  }
+
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Search getPhotos={this.getPhotos.bind(this)}></Search>
+        <Photos fotos={this.state.photos}></Photos>
       </div>
-    );
+    )
   }
 }
 

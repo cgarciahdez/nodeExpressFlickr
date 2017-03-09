@@ -21,7 +21,7 @@ function getApiKeys(callback, errorcallback) {
 				errorcallback(err);
 				return;
 			}
-			callback(api_key, api_secret);
+			callback(api_key.trim(), api_secret.trim());
 		});
 	});
 }
