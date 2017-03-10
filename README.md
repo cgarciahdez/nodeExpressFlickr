@@ -22,7 +22,7 @@ After you've done this, you can access the page in the following link: [http://l
 ## My special sauce
 Why is this project different from what John expected? You can CHOOSE your own rainbow! You've always hated pink because you don't believe in stereotipical gender roles? You want to see only black pictures because your goth heart calls for it? No problem! Just uncheck the colors you don't want to see, check the ones that you do, specify your terms and hit search! Are you irritated that the columns are not centered when you uncheck some colors? So am I! You are welcome to open an issue and collaborate with me. The magic of open source!
 
-# Old documentation from boiler plate::
+# Old documentation from boiler plate:
 # Node + Express + create-react-app + flickrApi Boilerplate
 
 This is a simple project that helps bootstrap projects that use create-react-app + node + express + flickrapi
