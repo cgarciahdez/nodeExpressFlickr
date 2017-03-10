@@ -1,7 +1,23 @@
-To run this
+# Camila's flickrainbow
 
+To run this (as you can see in the documentation below) you will need to have Flickr's api keys (check the boilerplate's documentation to see how to get them). Once you've cloned this repository, you will need to run install dependencies, compile the build folder, and finally, run it. This is the commands that you will need (which are taken from the boilerplate's readme):
 
-Old documentation:
+```
+git clone https://github.com/john-guerra/nodeExpressFlickr.git myApp
+cd myApp
+echo "my_flickr_api_key" > server/api_key.txt
+echo "my_flickr_api_secret" > server/api_secret.txt
+npm install
+npm run build
+node server
+```
+Please be aware that installing the dependencies and generating the compiled build folder might take a while.
+After you've done this, you can access the page in the following link: [http://localhost:9000](http://localhost:9000) 
+
+## My special sauce
+Why is this project different from what John expected? You can CHOOSE your own rainbow! You've always hated pink because you don't believe in stereotipical gender roles? You want to see only black pictures because your goth heart calls for it? No problem! Just uncheck the colors you don't want to see, check the ones that you do, specify your terms and hit search! Are you irritated that the columns are not centered when you uncheck some colors? So am I! You are welcome to open an issue and collaborate with me. The magic of open source!
+
+# Old documentation from boiler plate::
 # Node + Express + create-react-app + flickrApi Boilerplate
 
 This is a simple project that helps bootstrap projects that use create-react-app + node + express + flickrapi
