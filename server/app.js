@@ -51,10 +51,13 @@ app.get('/flickr/:query', function (req, res) {
 			}
 		  // we can now use "flickr" as our API object,
 		  // but we can only call public methods and access public data
+			console.log(req.query);
 		  flickr.photos.search({
 		  	safe:1,
 		  	sort:"relevance",
-		  	text:req.params["query"]
+		  	text:req.params["query"],
+				color_codes:req.query.color,
+				per_page:req.query.limit
 		  }, (err, data) => {
 		  	if (err) res.send(err);
 		  	console.log("Got flickr data sending it");

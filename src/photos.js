@@ -8,11 +8,19 @@ class Photos extends React.Component {
   render () {
     if(this.props.fotos){
       return(
+
         <div>
-          {this.props.fotos.map(color=>{
-            console.log(color);
-            <PhotoColumn photos={color}></PhotoColumn>
+          <div className="container text-center">
+          <div className="row text-center">
+          {this.props.fotos.map((color)=>{
+
+            return(
+              <PhotoColumn photos={color}></PhotoColumn>
+            )
+
           })}
+        </div>
+        </div>
         </div>
       )
     }

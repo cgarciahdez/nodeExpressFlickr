@@ -1,16 +1,43 @@
 import React, { PropTypes } from 'react'
+import { Button } from 'react-bootstrap';
+
 
 class Search extends React.Component {
 
-  search(term){
-    console.log(term);
-    this.props.getPhotos(term)
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      term: ''
+    }
+  }
+
+  search(ev){
+    console.log(ev);
+    console.log(ev.keyCode);
+    if(ev.keyCode===13)
+    {
+      this.props.getPhotos(this.state.term);
+    }
+  }
+
+  change(val){
+    console.log(val);
+    this.setState({
+      term:val
+    })
   }
 
   render () {
     return(
-      <div className="col-md-12 buscador">
-        <input type="text" onChange={(event) => this.search(event.target.value)}/>
+      <div className="row buscador">
+        <div className="col-md-2"></div>
+        <div className="col-md-7">
+          <input className="form-control" type="text" onKeyPress={(event)=>{this.search(event)}} onChange={(event) => this.change(event.target.value)}/>
+          </div>
+          <div className="col-md-1">
+          <Button onClick={()=>{this.props.getPhotos(this.state.term)}}>Search</Button>
+        </div>
       </div>
     )
   }

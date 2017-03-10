@@ -1,3 +1,7 @@
+To run this
+
+
+Old documentation:
 # Node + Express + create-react-app + flickrApi Boilerplate
 
 This is a simple project that helps bootstrap projects that use create-react-app + node + express + flickrapi
