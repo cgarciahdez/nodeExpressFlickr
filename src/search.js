@@ -20,14 +20,7 @@ class Search extends React.Component {
     })
   }
 
-  buscar(){
-    if(this.state.term){
-    this.props.getPhotos(this.state.term);
-  }
-  else{
-    alert("Please write a term!");
-  }
-  }
+  
 
   render () {
     return(
@@ -37,7 +30,7 @@ class Search extends React.Component {
           <input className="form-control" type="text" onChange={(event) => this.change(event.target.value)}/>
           </div>
           <div className="col-md-1">
-          <Button onClick={()=>{this.buscar.bind(this)}}>Search</Button>
+          <Button onClick={()=>{this.props.getPhotos(this.state.term)}}>Search</Button>
         </div>
       </div>
     )
