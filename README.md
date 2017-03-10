@@ -1,6 +1,6 @@
 # Camila's flickrainbow
 ![flickrainbow image]
-(https://ing-sis.tumblr.com/image/158217688075)
+(http://68.media.tumblr.com/7a2e54269ed432ba487386fac62d3732/tumblr_oml1d26Y7b1udsi6ko1_1280.png)
 ## What is this project?
 This project was made for the midterm in Uniandes' WebDev 2017-1 class. It is a web app where you can see a rainbow of images related to a term of your choosing. To try it out, check out the running instructions!
 
