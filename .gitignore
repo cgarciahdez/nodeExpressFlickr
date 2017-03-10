@@ -39,7 +39,7 @@ jspm_packages
 
 server/api_key.txt
 
-server/api_key.txt
+server/api_secret.txt
 
 /build
 
