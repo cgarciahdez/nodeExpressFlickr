@@ -1,5 +1,10 @@
 # Camila's flickrainbow
+![flickrainbow image]
+(http://ing-sis.tumblr.com/image/158217688075)
+## What is this project?
+This project was made for the midterm in Uniandes' WebDev 2017-1 class. It is a web app where you can see a rainbow of images related to a term of your choosing. To try it out, check out the running instructions!
 
+## Running the project
 To run this (as you can see in the documentation below) you will need to have Flickr's api keys (check the boilerplate's documentation to see how to get them). Once you've cloned this repository, you will need to run install dependencies, compile the build folder, and finally, run it. This is the commands that you will need (which are taken from the boilerplate's readme):
 
 ```
